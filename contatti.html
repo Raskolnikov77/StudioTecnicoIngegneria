@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Studio Tecnico Ingegneria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="bg-blue-600 text-white p-2.5 rounded-xl shadow-md">
+                    <i class="fa-solid fa-compass-drafting text-xl"></i>
+                </div>
+                <div>
+                    <span class="block font-bold text-lg tracking-tight text-slate-900">Ing. [Tuo Nome]</span>
+                    <span class="block text-xs text-blue-600 font-medium">Consulenza & Progettazione Tecnica</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                <a href="servizi.html" class="hover:text-blue-600 transition">Servizi</a>
+                <a href="contatti.html" class="text-blue-600 font-semibold transition">Contatti</a>
+            </nav>
+            <div>
+                <a href="contatti.html" class="hidden sm:inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-sm transition">
+                    Richiedi Preventivo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contatti Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <h1 class="text-3xl font-extrabold text-slate-900 mb-3">Contatta lo Studio</h1>
+            <p class="text-slate-600 text-sm">Compila il modulo sottostante per inviare una richiesta o utilizza i nostri recapiti diretti.</p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-2">
+            <div class="p-10 bg-slate-900 text-white flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Informazioni</h3>
+                    <p class="text-slate-300 text-sm mb-8 leading-relaxed">
+                        Siamo a disposizione per valutare richieste di preventivo per certificazioni energetiche o consulenze ingegneristiche specialistiche.
+                    </p>
+                </div>
+                <div class="space-y-4 text-sm text-slate-300">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-envelope text-blue-400"></i>
+                        <span>tua.email@studio.it</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone text-blue-400"></i>
+                        <span>+39 000 000 0000</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-location-dot text-blue-400"></i>
+                        <span>Milano e Provincia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-10">
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Messaggio simulato inviato con successo!');">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Nome e Cognome</label>
+                        <input type="text" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Email</label>
+                        <input type="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Messaggio / Richiesta</label>
+                        <textarea rows="4" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3.5 rounded-xl shadow-sm transition text-sm">
+                        Invia Messaggio
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 px-6 text-center text-xs text-slate-500 border-t border-slate-200">
+        <p>&copy; 2026 Ing. [Tuo Nome] - Partita IVA: 00000000000. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
