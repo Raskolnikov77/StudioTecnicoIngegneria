@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi - Studio Tecnico Ingegneria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="bg-blue-600 text-white p-2.5 rounded-xl shadow-md">
+                    <i class="fa-solid fa-compass-drafting text-xl"></i>
+                </div>
+                <div>
+                    <span class="block font-bold text-lg tracking-tight text-slate-900">Ing. [Tuo Nome]</span>
+                    <span class="block text-xs text-blue-600 font-medium">Consulenza & Progettazione Tecnica</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                <a href="servizi.html" class="text-blue-600 font-semibold transition">Servizi</a>
+                <a href="contatti.html" class="hover:text-blue-600 transition">Contatti</a>
+            </nav>
+            <div>
+                <a href="contatti.html" class="hidden sm:inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-sm transition">
+                    Richiedi Preventivo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intestazione Pagina -->
+    <section class="bg-slate-900 text-white py-16 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-4">I Nostri Servizi Professionali</h1>
+            <p class="text-slate-300 text-base">Competenze ingegneristiche multidisciplinari al servizio di privati, aziende e studi professionali.</p>
+        </div>
+    </section>
+
+    <!-- Dettaglio Servizi -->
+    <section class="py-20 px-6 max-w-6xl mx-auto space-y-16">
+        
+        <!-- Servizio 1 -->
+        <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="flex items-center justify-center bg-blue-50 text-blue-600 w-20 h-20 rounded-2xl text-3xl">
+                <i class="fa-solid fa-house-chimney-user"></i>
+            </div>
+            <div class="md:col-span-2 space-y-4">
+                <h2 class="text-2xl font-bold text-slate-900">Certificazioni Energetiche (APE)</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Redazione e rilascio di Attestati di Prestazione Energetica conformi alla normativa vigente. Il servizio comprende il sopralluogo tecnico, il rilievo geometrico e termico dell'immobile, l'analisi degli impianti di riscaldamento/raffrescamento e la registrazione telematica presso gli enti competenti regionali. Indispensabile per compravendite e contratti di locazione.
+                </p>
+            </div>
+        </div>
+
+        <!-- Servizio 2 -->
+        <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="flex items-center justify-center bg-blue-50 text-blue-600 w-20 h-20 rounded-2xl text-3xl">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div class="md:col-span-2 space-y-4">
+                <h2 class="text-2xl font-bold text-slate-900">Ingegneria Elettronica & Sistemi Embedded</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Consulenza specialistica nello sviluppo di sistemi elettronici complessi. Progettazione e analisi firmware, gestione di microcontrollori (es. architetture ARM / Nordic), ottimizzazione del codice di basso livello, debugging hardware e supporto ingegneristico mirato per lo sviluppo di prodotti innovativi in ambito automotive, industriale e IoT.
+                </p>
+            </div>
+        </div>
+
+        <!-- Servizio 3 -->
+        <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="flex items-center justify-center bg-blue-50 text-blue-600 w-20 h-20 rounded-2xl text-3xl">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+            <div class="md:col-span-2 space-y-4">
+                <h2 class="text-2xl font-bold text-slate-900">Perizie e Consulenze Tecniche</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Esecuzione di perizie tecniche di parte, audit energetici e strutturali, pareri di conformità e consulenze ingegneristiche su misura. Un supporto professionale flessibile e orientato alla risoluzione di problematiche tecniche specifiche per aziende e privati.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Call to action finale -->
+    <section class="bg-blue-600 text-white py-16 px-6 text-center">
+        <div class="max-w-2xl mx-auto space-y-6">
+            <h2 class="text-2xl font-bold">Hai bisogno di una consulenza specifica?</h2>
+            <p class="text-blue-100 text-sm">Contattaci per discutere del tuo progetto o per richiedere un preventivo senza impegno.</p>
+            <a href="contatti.html" class="inline-block bg-white text-blue-600 font-semibold px-8 py-3.5 rounded-xl shadow-md hover:bg-slate-100 transition">
+                Vai ai Contatti
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 px-6 text-center text-xs text-slate-500 border-t border-slate-200">
+        <p>&copy; 2026 Ing. [Tuo Nome] - Partita IVA: 00000000000. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
